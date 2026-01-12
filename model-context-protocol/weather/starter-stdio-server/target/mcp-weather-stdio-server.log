@@ -1,0 +1,41 @@
+2026-01-12T14:48:39.459+05:30  INFO 6694 --- [mcp-shopping-list] [main] c.s.m.McpShoppingListApplication         : Starting McpShoppingListApplication using Java 21.0.9 with PID 6694 (/Users/harshwardhanatkare/Desktop/spring-boot-mcp-server-example/target/classes started by harshwardhanatkare in /Users/harshwardhanatkare/Desktop/spring-boot-mcp-server-example)
+2026-01-12T14:48:39.459+05:30  INFO 6694 --- [mcp-shopping-list] [main] c.s.m.McpShoppingListApplication         : No active profile set, falling back to 1 default profile: "default"
+2026-01-12T14:48:39.709+05:30  INFO 6694 --- [mcp-shopping-list] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2026-01-12T14:48:39.709+05:30  INFO 6694 --- [mcp-shopping-list] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 3
+2026-01-12T14:48:39.709+05:30  INFO 6694 --- [mcp-shopping-list] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2026-01-12T14:48:39.709+05:30  INFO 6694 --- [mcp-shopping-list] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2026-01-12T14:48:39.709+05:30  INFO 6694 --- [mcp-shopping-list] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2026-01-12T14:48:39.801+05:30  INFO 6694 --- [mcp-shopping-list] [main] c.s.m.McpShoppingListApplication         : Started McpShoppingListApplication in 0.446 seconds (process running for 0.581)
+2026-01-12T14:50:15.491+05:30  INFO 6864 --- [mcp-shopping-list] [main] c.s.m.McpShoppingListApplicationTests    : Starting McpShoppingListApplicationTests using Java 21.0.9 with PID 6864 (started by harshwardhanatkare in /Users/harshwardhanatkare/Desktop/spring-boot-mcp-server-example)
+2026-01-12T14:50:15.492+05:30  INFO 6864 --- [mcp-shopping-list] [main] c.s.m.McpShoppingListApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2026-01-12T14:50:15.742+05:30  INFO 6864 --- [mcp-shopping-list] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable tools capabilities, notification: true
+2026-01-12T14:50:15.743+05:30  INFO 6864 --- [mcp-shopping-list] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Registered tools: 3
+2026-01-12T14:50:15.743+05:30  INFO 6864 --- [mcp-shopping-list] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable resources capabilities, notification: true
+2026-01-12T14:50:15.743+05:30  INFO 6864 --- [mcp-shopping-list] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable prompts capabilities, notification: true
+2026-01-12T14:50:15.743+05:30  INFO 6864 --- [mcp-shopping-list] [main] o.s.a.m.s.a.McpServerAutoConfiguration   : Enable completions capabilities
+2026-01-12T14:50:15.799+05:30  INFO 6864 --- [mcp-shopping-list] [main] c.s.m.McpShoppingListApplicationTests    : Started McpShoppingListApplicationTests in 0.406 seconds (process running for 0.681)
+2026-01-12T15:12:05.218+05:30 ERROR 6694 --- [mcp-shopping-list] [pool-2-thread-1] i.m.s.t.StdioServerTransportProvider     : Error reading from stdin
+
+java.io.IOException: Input/output error
+	at java.base/java.io.FileInputStream.readBytes(Native Method) ~[na:na]
+	at java.base/java.io.FileInputStream.read(FileInputStream.java:287) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read1(BufferedInputStream.java:345) ~[na:na]
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:420) ~[na:na]
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:399) ~[na:na]
+	at java.base/sun.nio.cs.StreamDecoder.readBytes(StreamDecoder.java:350) ~[na:na]
+	at java.base/sun.nio.cs.StreamDecoder.implRead(StreamDecoder.java:393) ~[na:na]
+	at java.base/sun.nio.cs.StreamDecoder.lockedRead(StreamDecoder.java:217) ~[na:na]
+	at java.base/sun.nio.cs.StreamDecoder.read(StreamDecoder.java:171) ~[na:na]
+	at java.base/java.io.InputStreamReader.read(InputStreamReader.java:188) ~[na:na]
+	at java.base/java.io.BufferedReader.fill(BufferedReader.java:160) ~[na:na]
+	at java.base/java.io.BufferedReader.implReadLine(BufferedReader.java:370) ~[na:na]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:347) ~[na:na]
+	at java.base/java.io.BufferedReader.readLine(BufferedReader.java:436) ~[na:na]
+	at io.modelcontextprotocol.server.transport.StdioServerTransportProvider$StdioMcpSessionTransport.lambda$startInboundProcessing$4(StdioServerTransportProvider.java:209) ~[mcp-0.10.0.jar:0.10.0]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:68) ~[reactor-core-3.7.6.jar:3.7.6]
+	at reactor.core.scheduler.SchedulerTask.call(SchedulerTask.java:28) ~[reactor-core-3.7.6.jar:3.7.6]
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144) ~[na:na]
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642) ~[na:na]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+
