@@ -14,6 +14,7 @@ public class McpShoppingListApplication {
 		SpringApplication.run(McpShoppingListApplication.class, args);
 	}
 
+	//using this bean mcp client will get list of tools that are exposed by mcp server
 	@Bean
 	public List<ToolCallback> tools(ShoppingCart shoppingCart) {
 		return List.of(ToolCallbacks.from(shoppingCart));

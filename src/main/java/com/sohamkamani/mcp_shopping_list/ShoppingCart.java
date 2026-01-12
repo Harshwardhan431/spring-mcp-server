@@ -19,6 +19,8 @@ public class ShoppingCart {
 
   @Tool(name = "addItem",
       description = "Add an item to the shopping list or update its quantity. Specify item name and quantity.")
+  // description: text given to our AI model to it knows wheather to use the tool or not, this value should completly describe the functinility of this method
+  // name : spring ai uses this exact names to map the inputs that AI extracts from users request to the tools arguments
   public String addItem(String name, int quantity) {
     if (name == null || name.trim().isEmpty() || quantity <= 0) {
       return "Error: Invalid item name or quantity.";
